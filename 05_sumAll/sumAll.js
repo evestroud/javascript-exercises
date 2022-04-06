@@ -4,6 +4,11 @@ const sumAll = function(x, y) {
   }
   let larger = (x >= y) ? x : y;
   let smaller = (x < y) ? x : y;
+  let finalSum = 0;
+  for (i = smaller; i <= larger; i++) {
+    finalSum += i;
+  }
+  return finalSum;
 };
 
 // Do not edit below this line
